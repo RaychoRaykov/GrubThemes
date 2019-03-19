@@ -12,9 +12,20 @@
 	left = 64
 	width = 1056
 	height = 48
-	text = "<>   И З Б О Р   З А   З А Р Е Ж Д А Н Е   <>"
+	text = "     И З Б О Р   З А   З А Р Е Ж Д А Н Е     "
 	font = "Terminus Bold 32"
 	color = "#FFFFFF"
+	align = "center"
+}
+
++ label {
+	top = 64
+	left = 64
+	width = 1056
+	height = 48
+	text = "<>                                         <>"
+	font = "Terminus Bold 32"
+	color = "#20E020"
 	align = "center"
 }
 
