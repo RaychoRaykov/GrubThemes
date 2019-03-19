@@ -1,0 +1,98 @@
+# GRUB2 theme by Raycho Raykov.
+# Version 0.8
+# Designed for 1920x1080 resolution
+
+# Default color: #20E020
+# Default font: "Terminus Bold 32"
+
+# GLOBAL PROPERTY
+
++ label {
+	top = 64
+	left = 64
+	width = 1056
+	height = 48
+	text = "<>   И З Б О Р   З А   З А Р Е Ж Д А Н Е   <>"
+	font = "Terminus Bold 32"
+	color = "#FFFFFF"
+	align = "center"
+}
+
+#message-font = "Terminus Bold 22"
+#message-color = "#FFFFFF"
+#message-bg-color = "#00AAFF"
+
+desktop-image: "background.png"
+desktop-color: "#000000"
+
+terminal-box: "terminal_box_*.png"
+terminal-font: "Terminus Bold 22"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
+# BOOT MENU
+
++ boot_menu {
+	left = 64
+	width = 1056
+	top = 192
+	height = 640
+
+	item_font = "Terminus Bold 28"
+	item_color = "#20E020"
+	item_height = 56
+	item_padding = 8
+	item_spacing = 8
+
+	item_icon_space = 8
+	icon_width = 48
+	icon_height = 48
+
+	selected_item_font = "Terminus Bold 28"
+	selected_item_color = "#FFFFFF"
+	selected_item_pixmap_style = "select_*.png"
+
+	menu_pixmap_style = "menu_bkg_*.png"
+
+	scrollbar = false
+}
+
+# Етикет за инструкции
+#	text = "[↑↓] Избор     [Enter] Зареждане     [E] Редактиране     [C] Команден ред     [Esc] Връщане назад"
++ label {
+	top = 1040
+	left = 64
+	width = 1840
+	height = 24
+	color = "#FFFFFF"
+	font = "Terminus Bold 22"
+	align = "right"
+	text = "[↑↓]           [Enter]               [E]                 [C]                  [Esc]              "
+}
++ label {
+	top = 1040
+	left = 64
+	width = 1840
+	height = 24
+	color = "#108010"
+	font = "Terminus Bold 22"
+	align = "right"
+	text = "     Избор             Зареждане         Редактиране         Команден ред           Връщане назад"
+}
+
+# PROGRESS BAR
++ progress_bar {
+	id = "__timeout__"
+	left = 0
+	width = 100%
+	top = 1072
+	height = 8
+
+	fg_color = "#20E020"
+	bg_color = "#004000"
+	border_color = "#004000"
+	show_text = false
+}
